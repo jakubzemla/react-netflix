@@ -1,0 +1,59 @@
+section.must-watch {
+    padding-bottom: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.all-movies {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.one-movie {
+    width: 300px;
+    box-shadow: 0 0 20px black;
+    color: #e5e5e5;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s linear;
+}
+
+.one-movie:hover {
+    transform: scale(1.04)
+}
+
+.one-movie img {
+    height: 170px;
+}
+
+.one-movie h2, .one-movie p {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+@media screen and (max-width: 1066px) {
+    .one-movie {
+        margin-bottom: 40px;
+    }
+
+    .bottom-menu {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
